@@ -1,0 +1,34 @@
+{
+  "name": "vue-cli-test",
+  "description": "A Vue.js project",
+  "author": "kodo <524580860@qq.com>",
+  "private": true,
+  "scripts": {
+    "dev": "webpack -p",
+    "build": "NODE_ENV=production webpack"
+  },
+  "dependencies": {
+    "vue": "^1.0.15"
+  },
+  "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-plugin-transform-runtime": "^6.0.0",
+    "babel-preset-es2015": "^6.0.0",
+    "babel-preset-stage-2": "^6.0.0",
+    "babel-runtime": "^5.8.0",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^0.9.1",
+    "file-loader": "^0.8.4",
+    "node-sass": "^3.4.2",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "vue-hot-reload-api": "^1.2.0",
+    "vue-html-loader": "^1.0.0",
+    "vue-loader": "^8.0.0",
+    "vue-style-loader": "^1.0.0",
+    "webpack": "^1.12.2"
+  }
+}
