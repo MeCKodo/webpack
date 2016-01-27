@@ -4,7 +4,7 @@
   "author": "kodo <524580860@qq.com>",
   "private": true,
   "scripts": {
-    "dev": "webpack -p",
+    "dev": "webpack --watch",
     "build": "NODE_ENV=production webpack"
   },
   "dependencies": {
