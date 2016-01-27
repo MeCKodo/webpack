@@ -34,7 +34,8 @@
 以上是我们的一个项目结构
 
 1.我所想的是每一个业务需求模块下(source/index1)会有很多页面
-	每一个页面都是一个文件夹(source/index1/index1-1,source/index1/index1-2)
+
+每一个页面都是一个文件夹(source/index1/index1-1,source/index1/index1-2)
 
 2.项目无需后台环境可以浏览器可以直接打开访问
 
