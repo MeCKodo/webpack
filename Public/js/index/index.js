@@ -58,13 +58,16 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	/**
+	 * Created by kodo on 16/1/26.
+	 */
+	
+	__webpack_require__(20);
+	
 	new _vue2.default({
 	  el: 'body',
 	  components: { App: _app2.default }
-	}); /**
-	     * Created by kodo on 16/1/26.
-	     */
-	
+	});
 	console.log(2);
 
 /***/ },
@@ -10250,6 +10253,12 @@
 /***/ function(module, exports) {
 
 	module.exports = "\n<div id=\"app\">\n    <hello></hello>\n</div>\n<div id=\"box\">\n\n</div>\n<div id=\"pox\" class=\"box\">\n\n</div>\n";
+
+/***/ },
+/* 20 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "index/index.html";
 
 /***/ }
 /******/ ]);

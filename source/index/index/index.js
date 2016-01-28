@@ -1,8 +1,8 @@
 /**
  * Created by kodo on 16/1/26.
  */
-import "./style.scss";
 
+import "./style.scss";
 import Vue from 'vue';
 import App from './app';
 

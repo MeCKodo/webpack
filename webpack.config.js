@@ -3,6 +3,7 @@
  */
 var path = require('path');
 var glob = require('glob');
+var fs = require('fs');
 var vue = require('vue-loader');
 var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
@@ -20,6 +21,7 @@ var getEntry = function () {
 
 module.exports = {
     entry: getEntry(),
+    context: __dirname,
     output: {
         path: path.resolve(__dirname, './public/'),
         filename: './js/[name].js'
@@ -89,6 +91,7 @@ module.exports = {
     },
     plugins: [
         new ExtractTextPlugin('./css/[name].css')
+        //new HtmlWebpackPlugin('./html/[name].html')
     ],
     vue: {
         loaders: {
@@ -117,5 +120,7 @@ if (process.env.NODE_ENV === 'production') {
         new webpack.optimize.OccurenceOrderPlugin()
     ]);
 } else {
-    module.exports.devtool = 'source-map'
+    module.exports.devtool = 'source-map';
+
+
 }
