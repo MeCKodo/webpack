@@ -2,7 +2,7 @@
  * Created by kodo on 16/1/26.
  */
 
-import "./style.scss";
+import "./style";
 import Vue from 'vue';
 import App from './app';
 

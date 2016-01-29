@@ -4,17 +4,15 @@
         <h1>{{ msg }}</h1>
     </div>
     <div id="mine">
-        <figure></figure>
-    </div>
+        <figure @click="test"></figure>
+    </div>阿斯顿
 </template>
 <style lang="sass">
-    #mine {
         figure {
-            width:200px;
+            width:300px;
             height:400px;
-            background: url("images/myprofile.jpg");
+            background: url("images/picture.png");
         }
-    }
     h1 {
         font-size:50px;
     }

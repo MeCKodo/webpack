@@ -20,20 +20,13 @@ var getEntry = function () {
 };
 
 module.exports = {
-    entry: getEntry(),
-    context: __dirname,
-    output: {
-        path: path.resolve(__dirname, './public/'),
-        filename: './js/[name].js'
+    entry: getEntry(), //路口
+    output: { //输出位置
+        path: path.resolve(__dirname, './public/'), //配置输出路径
+        filename: './js/[name].js' //文件输出形式
     },
-    resolve: {
-        extensions: ['', '.js', '.vue'],
-        alias: {
-            'source': path.resolve(__dirname, './source')
-        }
-    },
-    resolveLoader: {
-        root: path.join(__dirname, 'node_modules')
+    resolve: {//一些配置项
+        extensions: ['', '.js', '.vue','.scss'] //设置require或import的时候可以不需要带后缀
     },
     module: {
         loaders: [
@@ -52,11 +45,11 @@ module.exports = {
             },
             {
                 test: /\.(png|jpg|gif)$/,
-                loader: 'url',
-                query: {
+                loader: 'url?limit=10000&name=./images/[name].[ext]?[hash:10]',
+                /*query: {
                     limit: 10000,
                     name: './images/[name].[ext]?[hash:8]'
-                }
+                }*/
             },
             {
                 test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
@@ -85,15 +78,15 @@ module.exports = {
             }
         ]
     },
-    babel: {
+    babel: { //配置babel
         "presets": ["es2015"],
         "plugins": ["transform-runtime"]
     },
-    plugins: [
+    plugins: [ //编译的时候所执行的插件数组
         new ExtractTextPlugin('./css/[name].css')
         //new HtmlWebpackPlugin('./html/[name].html')
     ],
-    vue: {
+    vue: { //vue的配置,需要单独出来配置
         loaders: {
             js: 'babel'
         }
@@ -121,6 +114,4 @@ if (process.env.NODE_ENV === 'production') {
     ]);
 } else {
     module.exports.devtool = 'source-map';
-
-
 }

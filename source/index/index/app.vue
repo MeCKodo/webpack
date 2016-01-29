@@ -1,21 +1,21 @@
 <template>
     <div id="app">
-        <hello></hello>
     </div>
+    <hello></hello>
     <div id="box">
 
     </div>
     <div id="pox" class="box">
-
+123
     </div>
 </template>
 
 <script>
-    import Hello from './test'
+    import hello from './test'
 
     export default {
         components: {
-            Hello
+            hello
         }
     }
 </script>

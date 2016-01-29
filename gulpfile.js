@@ -53,9 +53,7 @@ gulp.task('clean', function () {
     return gulp.src('./output', {read: false})
         .pipe(clean());
 });
-gulp.task('auto', function () {
 
-});
 
 gulp.task('reload', function () {
 
@@ -69,21 +67,3 @@ gulp.task('reload', function () {
     gulp.watch([sasspath, csspath, jspath]).on('change', bsReload);
 });
 
-var fileList = [];
-function walk(path){
-    var dirList = fs.readdirSync(path);
-    dirList.forEach(function(item){
-        if(fs.statSync(path + '/' + item).isDirectory()){
-            walk(path + '/' + item);
-        } else {
-            var reg = /\.html$/;
-            if(item.match(reg)) {
-
-                var removeSource = path.substring(8);
-                var target = removeSource.substring(0,removeSource.lastIndexOf('/')) + '/' + item.match(reg).input;
-                //console.log(item.match(reg).input);
-                fileList.push(item);
-            }
-        }
-    });
-}
