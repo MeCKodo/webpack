@@ -2,7 +2,7 @@
 
 > * webpack + gulp + vue (thinkPHP后台配置)
 
-#### 项目需求
+#### 项目需求(请认真看目录结构,项目构建很大都基于目录来的)
 
 ```javascript
 --- Application
@@ -14,20 +14,21 @@
     |--- css
     |--- ...
 --- source (前端开发目录)
-    |--- index1 (一个业务需求模块)
-    |    |--- index1-1 (index 页面)
+    |--- index (一个业务需求模块,每个业务需求模块下会有很多页面)
+    |    |--- index (index 页面)
     |    |	  |--- images	
     |    |    |--- index.html 
     |    |    |--- app.vue
     |    |    |--- index.js
     |    |    |--- style.scss
     |    |    |--- ...
-    |    |--- index1-2 (index2 页面)
+    |    |--- topics (topics 页面)
     |    |    |--- images
-    |    |    |--- ...
-    |--- index2 (另外一个业务需求模块)          
-    |    |--- index2-1 
-    |    |    |--- ...
+    |    |    |--- topics.html
+    | 	 |	  |	...
+    |--- crowd (另外一个业务需求模块,每个业务需求模块下会有很多页面)          
+    |    |--- index 
+    |    |    |--- index.html
   
 ```
 
