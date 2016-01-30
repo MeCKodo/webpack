@@ -308,4 +308,4 @@ gulp.task('view', function () {
 
 虽然我写得都很基础,但我还是希望您别看我的文章.
 
-如果能给您带来不错的学习体验,麻烦请右上角star : ) ` hava a nice day `
+> * 如果能给您带来不错的学习体验,麻烦请右上角star : ) ` hava a nice day `
