@@ -1,4 +1,4 @@
-## 在webpack配置中的探索(持续更新中)
+## WebPack在项目配置中的探索(持续更新中)
 
 > * webpack + gulp + vue (thinkPHP后台配置)
 
