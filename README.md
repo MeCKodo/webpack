@@ -214,23 +214,23 @@ webpack仅仅只会把我们js路口里的所有东西都处理了,但是我们�
     |--- Home
     |   |--- View (线上用户访问的.html目录)
 	|		 |--- index (一个业务需求模块)
-    | 		  	 |--- index (index 页面)
-    |				|--- index.html
-    			 |--- topics
-    			 	|--- topics.html
-    		|--- crowd
-    			 |--- index
-    			 	|--- index.html
+    | 		 | 	 |--- index (index 页面)
+    |		 |	 |	|--- index.html
+    |		 |	 |--- topics
+    | 		 |	 |	|--- topics.html
+    |		 |--- crowd
+    |		 |	 |--- index
+    |		 |	 |	|--- index.html
 
 --- Application (正确结构)
     |--- Home
     |   |--- View (线上用户访问的.html目录)
-	|		 |--- index (一个业务需求模块)
-    |				|--- index.html
-    			 	|--- topics.html
-    		|--- crowd
-    			 |--- index
-    			 	|--- index.html    			 	
+	|	|	|--- index (一个业务需求模块)
+    |	|	|		|--- index.html
+    |	|	|	 	|--- topics.html
+    |	|	|--- crowd
+    |	|	|	 |--- index
+    |	|	|	 |	|--- index.html    			 	
     			 	
 ```
 
