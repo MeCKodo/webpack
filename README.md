@@ -98,8 +98,9 @@ var getEntry = function () {
     
     console.log(entry); 
     /**
-	*	 entry = { 'crowd/index' : './source/crowd/index/index.js',
-	*  			   'index/index' : './source/index/index/index.js'
+	*	 entry = { 
+	*				'crowd/index' : './source/crowd/index/index.js',
+	*				'index/index' : './source/index/index/index.js'
 	*  			 }
     *
     **/
@@ -116,7 +117,7 @@ output: { //输出位置
 	path: path.resolve(__dirname, './public/'), //配置输出路径
 	filename: './js/[name].js' //文件输出形式
 	//关于filename 我们有个变量就是 [name] = entry的key  当然还有别的变量比如[id],[hash]等,大家可以自行发挥
-	我们也能把filename写成  filename : [name]/[name].[name].js 也是可以的
+	//我们也能把filename写成  filename : [name]/[name].[name].js 也是可以的
 },
 
 ```
@@ -232,12 +233,12 @@ webpack仅仅只会把我们js路口里的所有东西都处理了,但是我们�
     |   |--- View (线上用户访问的.html目录)
 	|		 |--- index (一个业务需求模块)
     | 		 | 	 |--- index (index 页面,多余的目录)
-    |		 |	 |	|--- index.html
+    |		 |	 |	 |--- index.html
     |		 |	 |--- topics (topics页面,多余的目录)
-    | 		 |	 |	|--- topics.html
-    |		 |--- crowd
-    |		 |	 |--- index
-    |		 |	 |	|--- index.html
+    | 		 |	 |	 |--- topics.html
+    |		 |--- crowd (crowd业务模块)
+    |		 |	 |--- index (crowd业务模块 index页面,多余的目录)
+    |		 |	 |	 |--- index.html
 
 //我们的业务模块文件应该包含所有的业务页面,而无需一个页面就是一个文件夹.
 //所以以下才是正确的目录结构
@@ -246,11 +247,10 @@ webpack仅仅只会把我们js路口里的所有东西都处理了,但是我们�
     |--- Home
     |   |--- View (线上用户访问的.html目录)
 	|	|	|--- index (一个业务需求模块)
-    |	|	|		|--- index.html
-    |	|	|	 	|--- topics.html
-    |	|	|--- crowd
-    |	|	|	 |--- index
-    |	|	|	 |	|--- index.html    			 	
+    |	|	|	 |--- index.html
+    |	|	|	 |--- topics.html
+    |	|	|--- crowd (另一个业务需求模块)
+    |	|	|	 |--- index.html    			 	
     			 	
 ```
 
