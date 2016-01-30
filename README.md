@@ -47,7 +47,9 @@
 > * 5.当我们不需要这个业务模块,或者某个页面的时候可以直接删除整个文件夹即可
 
 
-webpack会帮助我们会为每一个页面生成他自己的css文件,js文件. 所以我们直接在我们的index页面里link和script他们
+webpack会帮助我们会为每一个页面生成他自己的css文件,js文件. 
+
+由于是多页应用,在这我的html都是手动创建的(还没找到什么好的解决办法),所以我们直接在我们的index页面里link和script他们
 
 ```html
     <link rel="stylesheet" href="../../../Public/css/index/index.css">
