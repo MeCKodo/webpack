@@ -1,0 +1,2 @@
+webpackJsonp([2],{4:function(t,e){"use strict";Object.defineProperty(e,"__esModule",{value:!0}),e["default"]={data:function(){return{}},components:{}}},10:function(t,e,o){e=t.exports=o(1)(),e.push([t.id,"",""])},14:function(t,e){t.exports="<h1>我是list页面</h1>"},18:function(t,e,o){var s,n;o(10),s=o(4),n=o(14),t.exports=s||{},t.exports.__esModule&&(t.exports=t.exports["default"]),n&&(("function"==typeof t.exports?t.exports.options||(t.exports.options={}):t.exports).template=n)}});
+//# sourceMappingURL=2.js.map
