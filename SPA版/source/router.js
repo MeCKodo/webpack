@@ -3,13 +3,13 @@ export default function (router){
         '*' : {
             name : "404",
             component (resolve) {
-                require(['./components/404.vue'], resolve);
+                require(['./common/404.vue'], resolve);
             }
         },
         '/' : {
             name : "home",
             component (resolve) {
-                require(['./components/home.vue'], resolve);
+                require(['./common/home.vue'], resolve);
             }
         },
         'profile' : {
