@@ -86,8 +86,8 @@ module.exports = {
 };
 var vueLoader = {
     js: 'babel',
-    css: ExtractTextPlugin.extract("css"),
-    sass: ExtractTextPlugin.extract("css!sass")
+    css: ExtractTextPlugin.extract('vue-style-loader',"css-loader"),
+    scss: ExtractTextPlugin.extract('vue-style-loader', 'css-loader!sass-loader')
 };
 if (process.env.NODE_ENV === 'production') {
     module.exports.devtool = '#source-map';
