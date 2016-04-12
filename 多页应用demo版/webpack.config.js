@@ -95,7 +95,7 @@ module.exports = {
 var vueLoader = {
     js: 'babel',
     css: ExtractTextPlugin.extract("vue-style-loader", "css-loader"),
-    sass: ExtractTextPlugin.extract("vue-style-loader", "css-loader", 'sass-loader')
+    scss: ExtractTextPlugin.extract("vue-style-loader", "css-loader", 'sass-loader')
 };
 if (process.env.NODE_ENV === 'production') {
     module.exports.vue.loaders = vueLoader;
