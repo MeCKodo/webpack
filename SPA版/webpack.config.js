@@ -8,7 +8,7 @@ module.exports = {
     entry: './source/main.js',
     output: {
         path: path.resolve(__dirname, './www/static'),
-        publicPath: '/www/static/',
+        publicPath: '/static/',
         chunkFilename: 'js/[id].js',
         filename: 'build.js'
     },
@@ -92,7 +92,6 @@ var vueLoader = {
 if (process.env.NODE_ENV === 'production') {
     module.exports.devtool = '#source-map';
     module.exports.vue.loaders = vueLoader;
-    module.exports.output.publicPath = 'static/';
 
     // http://vuejs.github.io/vue-loader/workflow/production.html
     module.exports.plugins = (module.exports.plugins || []).concat([
