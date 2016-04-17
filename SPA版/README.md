@@ -17,8 +17,7 @@ webpack配置其实大体是一致的，但在SPA的项目中，我们就可以�
 
 ### 前端开发约定（目录）
 
-`source/index.html` 为我们开发时候使用的测试页面
-`source/tpl.html` 是build输出到相应目录下(view/home/index/index.html)所需的模板页面
+`source/index.html` 为我们开发时候使用的模板页面
 
 所以webpack中会有这一段
 ```javascript
@@ -27,7 +26,7 @@ plugins: [
     new HtmlWebpackPlugin({ 
     //为了配合thinkjs的目录定义 需要输出在view/home/[controller]/index.html 下
         filename : "../../view/home/index/index.html",
-        template : "./source/tpl.html"
+        template : "./source/index.html"
     })
 ],
 ```
@@ -73,15 +72,10 @@ plugins: [
 ```javascript
 output: {
     path: path.resolve(__dirname, './www/static'),
-    publicPath: '/www/static/',
+    publicPath: '/static/',
     chunkFilename: 'js/[id].js',
     filename: 'build.js'
 },
-```
-线上build需要修改publicPath(详见webpack配置)
-
-```javascript
-module.exports.output.publicPath = 'static/';
 ```
 
 上线
