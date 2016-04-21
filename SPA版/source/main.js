@@ -1,4 +1,4 @@
-import "./index.scss";
+import './index.scss';
 import Vue from 'vue';
 import VueRouter from "vue-router";
 import routerMap from "./router";
@@ -10,11 +10,17 @@ const app = Vue.extend({
     el: function () {
         return "html"
     },
+    route: {
+        data(transition){
+            transition.next();
+        }
+    },
     data () {
         return {}
     },
     ready () {
-        console.log("初始化vue");
+        console.log(router);
+        console.log("init");
     }
 });
 
