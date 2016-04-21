@@ -44,9 +44,6 @@
 	index.sass        // 主站全局sass
 	main.js           // 主站入口js
 	router.js         // 主站路由
-	admin.html        // 后台入口html
-	admin.js          // 后台入口js
-	admin.router.js   // 后台路由
 ```
 
 #### 难点
