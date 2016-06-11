@@ -10,4 +10,3 @@
 
 [SPA版本](https://github.com/MeCKodo/webpack/tree/master/SPA%E7%89%88)
 
-> 如果能帮助到你,请右上角star
