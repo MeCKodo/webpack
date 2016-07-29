@@ -4,7 +4,7 @@
 
 ## webpack + vue + vuex + vue-router + vue-resource + bootstrap
 
-
+```js
 --- src
 	|--- apis // api目录
 		|--- somePage
@@ -37,4 +37,4 @@
 	main.scss 全局sass
 	router.js 路由文件
 index.html 入口页面	
-
+```
