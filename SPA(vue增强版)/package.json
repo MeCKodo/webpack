@@ -1,0 +1,45 @@
+{
+  "name": "panda",
+  "description": "panda teacher",
+  "author": "kodo <524580860@qq.com>",
+  "scripts": {
+    "dev": "webpack-dev-server --inline --hot",
+    "build": "cross-env DEV=false NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "dependencies": {
+    "vue": "^1.0.26",
+    "babel-runtime": "^6.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-eslint": "^6.1.2",
+    "babel-loader": "^6.0.0",
+    "babel-plugin-transform-runtime": "^6.0.0",
+    "babel-preset-es2015": "^6.0.0",
+    "babel-preset-stage-0": "^6.0.0",
+    "cross-env": "^1.0.6",
+    "css-loader": "^0.23.0",
+    "eslint": "^3.1.1",
+    "eslint-loader": "^1.5.0",
+    "eslint-plugin-html": "^1.3.0",
+    "eslint-config-airbnb-base": "^3.0.1",
+    "eslint-plugin-import": "^1.8.1",
+    "eslint-friendly-formatter": "^2.0.5",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.4",
+    "html-webpack-plugin": "^2.19.0",
+    "json-loader": "^0.5.4",
+    "node-sass": "^3.7.0",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "vue-hot-reload-api": "^1.2.0",
+    "vue-html-loader": "^1.0.0",
+    "vue-loader": "^8.2.1",
+    "vue-router": "^0.7.13",
+    "vue-style-loader": "^1.0.0",
+    "vuex": "^0.6.3",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.0"
+  }
+}
