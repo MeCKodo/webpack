@@ -1,4 +1,4 @@
-### 多页应用DEMO版
+### 多页应用DEMO版(已弃用,有更好的解决方案)
 
 > gulp + webpack + vue + sass
 
@@ -11,3 +11,7 @@
 [SPA版本](https://github.com/MeCKodo/webpack/tree/master/SPA%E7%89%88)
 
 ### SPA vue增强版
+
+> ES6(7) + vue + vue-router + vuex + eslint + sass + mock
+
+[增强版](https://github.com/MeCKodo/webpack/tree/master/SPA(vue%E5%A2%9E%E5%BC%BA%E7%89%88))

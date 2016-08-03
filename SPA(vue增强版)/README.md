@@ -29,9 +29,6 @@
 			|--- .{.png,.jpg...}
 			|--- .{eot,...}
 	|--- scss 
-	|--- router
-		|--- index.js
-		|--- home.js 
 	App.vue 入口文件
 	main.js 入口js文件
 	main.scss 全局sass
